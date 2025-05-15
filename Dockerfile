@@ -20,6 +20,6 @@ COPY --from=builder /app/package*.json ./
 COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/src ./src
 
-EXPOSE 4001
+EXPOSE 4000
 
 CMD ["npm", "run", "start"]

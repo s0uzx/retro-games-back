@@ -5,7 +5,7 @@ import cors from "cors"; // Importa o middleware CORS
 import routes from "./routes/index.routes.js";
 
 config(); // Carrega variáveis de ambiente do arquivo .env
-const port = process.env.PORT || 4001; // Define a porta do servidor
+const port = process.env.PORT || 4000; // Define a porta do servidor
 
 // Inicializa o Express
 const app = express();

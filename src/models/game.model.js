@@ -2,7 +2,7 @@ import prisma from "../../prisma/prisma.js";
 
 class GameModel {
   // Obter todos os jogos
-  async findAll() {
+  async findAll(name, platform) {
     const games = await prisma.game.findMany();
 
     return {
